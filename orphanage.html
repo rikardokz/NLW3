@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt_PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrigo | Happy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"
+      integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA=="
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+      integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanage.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+  </head>
+  <body>
+    <div id="page-orphanage">
+      <aside class="animate-right sidebar">
+        <img src="./public/images/map-marker.svg" alt="Happy">
+        <footer>
+          <button onClick="history.back()">
+            <img src="./public/images/arrow-back.svg" alt="Voltar">
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+        <div class="orphanage-details">
+          <img src="./public/images/cbk.jpg" alt="Abrigo" />
+          <div class="images">
+            <button class="active" type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+            <button type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+            <button type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+            <button type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+            <button type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+            <button type="button">
+              <img src="./public/images/cbk.jpg" alt="Abrigo" />
+            </button>
+          </div>
+
+          <div class="orphanage-details-content">
+            <h1>ABRIGO - Associação Portuguesa de Apoio à Criança</h1>
+            <p>
+              A ABRIGO tem por missão a recepção e acompanhamento de crianças em
+              situação de risco, apoio às famílias com crianças e jovens em
+              situação de risco social e a produção e o desenvolvimento de
+              investigação científica na mesma área.
+            </p>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+              <footer>
+                <a href="">Ver rotas no Google Maps</a>
+              </footer>
+            </div>
+
+            <hr />
+
+            <h2>Instruções para visita</h2>
+
+            <p>Agende telefónicamente e traga muito amor e paciência</p>
+
+            <div class="open-details">
+              <div class="hour">
+                <img src="./public/images/clock.svg" alt="horarios" />
+                Seg. a Sex: 10h00 – 18h00 (contacte antes)
+              </div>
+              <div class="open-on-weekends">
+                <img src="./public/images/info.svg" alt="Informações" />
+                Estamos fechados ao fim-de-semana
+              </div>
+            </div>
+
+            <button type="button" class="primary-button">
+              <img src="./public/images/whatsapp.svg" alt="Contacte" />
+              Entrar em contacto
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./public/scripts/page-orphanage.js"></script>
+  </body>
+</html>
