@@ -4,14 +4,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([38.711, -8.98]).addTo(map)
-    .bindPopup('ABRIGO - Associação Portuguesa de Apoio à Criança.')
-    .openPopup();
-
-L.marker([38.62, -9.10]).addTo(map)
-    .bindPopup('ABRIGO - Associação Portuguesa de Apoio à Criança.')
-    .openPopup();
-
 // icon created
 const icon = L.icon({
   iconUrl: "./public/images/map-marker.svg",
@@ -26,6 +18,10 @@ const popup = L.popup({
     className: "map-popup",
     minWidth: 240,
     minHeight: 240
-}).setContent('ABRIGO - Associação Portuguesa de Apoio à Criança. <a href=""')
+}).setContent('ABRIGO - Proteção Criança <a href="orphanage.html?id=1" class="choose-orphanage"><img src="./public/images/arrow-white.svg"/></a>')
 
-// vou em 1h32:14 - day 2
+// markers
+
+L.marker([38.711, -8.98], { icon }).addTo(map)
+    .bindPopup(popup)
+    
