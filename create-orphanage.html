@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar um orfanato| Happy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"
+      integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA=="
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+      integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/page-create-orphanage.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/sidebar.css">
+  </head>
+  <body>
+    <div id="page-create-orphanage">
+      <aside class="animate-right sidebar">
+        <img src="./public/images/map-marker.svg" alt="Happy">
+        <footer>
+          <button onClick="history.back()">
+            <img src="./public/images/arrow-back.svg" alt="Voltar">
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+        <form action="">
+          <fieldset>
+            <legend>Dados</legend>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+
+              <footer>
+                <a href="#" id="select-point">
+                  Clique no mapa para adicionar a localização
+                </a>
+              </footer>
+            </div>
+
+            <div class="input-block">
+              <label for="name">Nome</label>
+              <input id="name" name="name">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Visitação</legend>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+
+    <script src="./public/scripts/page-create-orphanage.js"></script>
+  </body>
+</html>
